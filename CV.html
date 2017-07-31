@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resu-Me Create CV</title>
+   <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+      <script src="bootstrap/js/jquery.js"></script> 
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+       <style> 
+        #Resume_App{
+            background-color:#265a88;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+      <nav class="navbar navbar-inverse navbar-fixed-top"  id="my-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index2.html" class="navbar-brand">Resu-ME</a>  
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index2.html">Resume</a>< </li>
+                         <li><a href="index2.html">Curriculum Vitae</a>< </li>
+                           <li><a href="AboutUS.html">About Us</a>< </li>
+                    </ul>
+                </div>
+        </nav>
+        <br/><br/><br/>
+
+                <div class="container" id="Resume_form">
+
+                <div class="page-header text-center">
+                    <h1>Just fill the from and get your Curriculum Vitae <br/>
+                        <small>You will get Resume as a PDF file</small> </h1>
+                </div>
+
+                <!-- Registration form - START -->
+                <div class="container">
+                    <div class="row">
+                       <form role="form" action="cv.php" method="Post">
+                            <div class="col-lg-6" >
+                                <div class="well well-sm text-center" id="Resume_App"><strong>Curriculam Vitae Application Form</strong></div>
+                                    <div class="form-group">
+                                        <label for="InputName">Full Name</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="name" id="InputName" 
+                                            placeholder="Enter Name" required>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                        </div>
+                                    </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Enter Address</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="InputEmailFirst" 
+                                        name="address" placeholder="Enter Address" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Mobile Number</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="InputEmailSecond" 
+                                        name="mob" placeholder="Mobile" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Email</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="InputEmailSecond" 
+                                        name="email" placeholder="E-Mail" required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputMessage">Carrier Objective</label>
+                                    <div class="input-group">
+                                        <textarea name="objective" id="InputMessage" 
+                                        class="form-control" rows="3" required></textarea>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                                
+                               <div class="form-group">
+		                            <label for="InputMessage">Academics Qualification </label>
+		                             <div class="form-group">
+				                    <label for="InputEmail" style="color: skyblue;">Post Graduation*</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="pg_cource" placeholder="Cource (ME, MA..etc)" value="" >
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    <div class="input-group">
+				                        <input type="text" class="form-control" id="InputEmailSecond" 
+				                        name="pg_college" placeholder="College" >
+				                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+				                    </div>
+				                    <label for="InputEmail" style="color: skyblue;">Graduation</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="ug_cource" placeholder="Cource (B.E., B.B.A. etc)" >
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    <div class="input-group">
+				                        <input type="text" class="form-control" id="InputEmailSecond" 
+				                        name="ug_college" placeholder="College" >
+				                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+				                    </div>
+				                    <label for="InputEmail" style="color: skyblue;">Higher Secondary School</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="hss_school" placeholder="School" required>
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    <div class="input-group">
+				                        <input type="text" class="form-control" id="InputEmailSecond" 
+				                        name="hss_marks" placeholder="% obtained" required>
+				                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+				                    </div>
+				                    <label for="InputEmail" style="color: skyblue;">High School</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="hs_school" placeholder="School " required>
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    <div class="input-group">
+				                        <input type="text" class="form-control" id="InputEmailSecond" 
+				                        name="hs_marks" placeholder="% obtained" required>
+				                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+				                    </div>
+		                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="InputEmail">Computer skills</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="InputEmailSecond" 
+                                        name="computer" placeholder="MS Word, ... Languages :- Java ....." required>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>
+                                 
+                                 <div class="form-group">
+                                    <label for="InputMessage">Area of Strength</label>
+                                    <div class="input-group">
+                                        <textarea name="strength" id="InputMessage"
+                                         class="form-control" rows="3" required></textarea>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>   
+                                 
+                              <div class="form-group">
+                                    <label for="InputMessage">Internship Details(if any)</label>
+                                    <div class="input-group">
+                                        <textarea name="experience" id="InputMessage"
+                                         class="form-control" rows="3" required></textarea>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                    </div>
+                                </div>   
+                                
+                                 <div class="form-group">
+		                            <label for="InputMessage">Personal Details</label>
+		                             <div class="form-group">
+				                    <label for="InputEmail" style="color: skyblue;">Father's Name</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="fathername" placeholder="Father's name" value="" >
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    
+				                    <label for="InputEmail" style="color: skyblue;">Date of birth</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="dob" placeholder="dd/mm/yyyy" >
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                   
+				                    <label for="InputEmail" style="color: skyblue;">Hobbies</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="hobbies" placeholder="Listening music, Reading Books...." required>
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                   
+				                    <label for="InputEmail" style="color: skyblue;">Language know</label>
+						            <div class="input-group">
+						                <input type="text" class="form-control" id="InputEmailSecond" 
+						                name="language" placeholder="English, Hindi, Bengali ....." required>
+						                <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+						            </div>
+				                    
+		                        </div>
+                                </div>
+                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-primary">
+                            </div>
+                        </form>
+                        <div >
+                        <img src="imgs/Resume/Resume.png" class="img-responsive" width="580px" 
+                        height="700px" style="border:1px solid">
+                        </div> 
+                   </div>
+                      
+                </div><!-- Registration form - END -->
+
+</div>
+<br /><br />
+   <footer class="footer ">
+           <div class="container-fluid well text-center">
+              <h3>Resu-ME<br/>
+              <small>We design your Carrier with pleasure.</small>
+              </h3>
+           </div>
+         </footer>
+</body>
+</html>

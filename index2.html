@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Welcome to Resu-ME</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+      <script src="bootstrap/js/jquery.js"></script> 
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <style type="text/css">
+	  #my-header{
+		   box-shadow: 0 0 10px #777777	
+		  }
+        #Resume-slider img{
+		      margin:auto;	
+			}
+            .slierWidth{
+           margin: auto;
+            }.slierWidth img{
+				border:1px black solid;
+				padding:10px;
+				}
+			#welcomeMsg{
+		       background-color:#fff;
+			   margin-top:33px;
+			   text-shadow: 1px 1px 2px #666666;
+			     color:#265a88;
+			   margin-bottom:20px;
+			    box-shadow: 0 0 10px #777777	
+			}#welcomeMsg small{
+				text-shadow: 1px 1px 1px #666666;
+				}
+			.shadow{
+			box-shadow: 0 0 3px #777777;
+			
+			
+				}
+				.h1Tags{
+				color:#FF3F55;
+				text-shadow: 1px 1px 1px #666666;
+					}
+			.resumeAndCvBody{
+				margin:20px 0px;
+				background-color:fff;
+				 box-shadow: 0 0 10px #777777
+			
+				}		                 
+      </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top"  id="my-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Resu-ME</a>  
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Resume.html">Resume</a> </li>
+                        <li><a href="CV.html">Curriculum Vitae</a> </li>
+                        <li><a href="AboutUS.html">About Us</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <br/>
+        <div class="jumbotron text-center" id="welcomeMsg">
+            <h1>Welcome to Resu-ME<br/>
+                <small>We will help you to create Resume and CV with ease.</small></h1>
+            <br />
+            <div class="btn-group ">
+                <a  href="#Resume" class="btn btn-lg btn-warning shadow">Create Resume</a>
+                <a  href="#CV" class="btn btn-lg btn-info shadow">Create CurriculumVitae </a>
+             </div>
+         </div>
+         
+        <!--For ResumeBody-->
+        <div class="well resumeAndCvBody" id="Resume">
+            <br /><br/>
+            <h2 class="h1Tags">Resume Formats</h2>
+            <div>
+                <blockquote>
+                    <p>Here are the some popular formates for Resume, have a look</p>
+                </blockquote> 
+                     <!--Resume slider start-->
+                        <div class="container" id="Resume-slider">
+                          <br>
+                          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                              </ol>
+                        
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner slierWidth" role="listbox" >
+                              <div class="item active">
+                              <a href="Resume.html"> <img src="imgs/Resume/Resume.png" 
+                              name="resume1" alt="resume1" width="460" height="345"> </a>
+                              </div>
+                        
+                              <div class="item">
+                              <a href="Resume.html"> <img src="imgs/Resume/Resume2.png"
+                               alt="resume2" name="resume2" width="460" height="345" > </a>
+                              </div> 
+                            
+                            
+                              <div class="item">
+                              <a href="Resume.html"> <img src="imgs/Resume/Resumeiii.png"
+                               alt="resume3" name="resume3" width="460" height="345" > </a>
+                              </div>
+                        
+                              <div class="item">
+                              <a href="Resume.html">  <img src="imgs/Resume/Resumev.png" 
+                              alt="resume5" name="resume5" width="460" height="345"> </a>
+                              </div>
+                                
+                             
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div><!--Resume slider end-->
+               </div>
+            </div>         
+        </div> <!--end of Resumebody -->
+         
+        
+        
+        <!--For CVbody-->
+        <div class="well resumeAndCvBody" id="CV">
+             <br /><br/>
+            <h2 class="h1Tags">Curriculum Vitae Formats</h2>
+            <div>
+                <blockquote>
+                    <p>Here are the some popular formates for CV, have a look</p>
+                </blockquote> 
+                      <!--CV slider start-->
+                        <div class="container" id="Resume-slider">
+                          <br>
+                          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel2" data-slide-to="1"></li>
+                              <li data-target="#myCarousel2" data-slide-to="2"></li>
+                              <li data-target="#myCarousel2" data-slide-to="3"></li>
+                             </ol>
+                        
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner slierWidth" role="listbox">
+                              <div class="item active">
+                                  <a href="CV.html"> <img src="imgs/Cv/cv1.png"
+                                   alt="cv1" name="cv1" width="460" height="345"> </a>
+                              </div>
+                        
+                              <div class="item">
+                              <a href="CV.html">   <img src="imgs/Cv/cv2.png"
+                               alt="cv2" name="cv2" width="460" height="345">  </a>
+                              </div>
+                            
+                              <div class="item">
+                              <a href="CV.html">   <img src="imgs/Cv/cv3.png" 
+                              alt="cv3" name="cv3" width="460" height="345">  </a>
+                              </div>
+                        
+                              <div class="item">
+                                  <a href="CV.html">  <img src="imgs/Cv/cv4.png"
+                                   alt="cv4" name="cv4" width="460" height="345" > </a>
+                              </div> 
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div><!-- Cv-slider end-->
+                </div>
+         </div> <!--end of CV section-->
+        
+         
+         
+         <footer class="footer ">
+           <div class="container-fluid well text-center">
+              <h3>Resu-ME<br/>
+              <small>We design your Career with pleasure.</small>
+              </h3>
+           </div>
+         </footer>
+    </body>
+</html>
